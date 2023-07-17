@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/APOD/static/css/main.d041bd9c.css",
+    "main.js": "/APOD/static/js/main.c972e7c2.js",
+    "index.html": "/APOD/index.html",
+    "main.d041bd9c.css.map": "/APOD/static/css/main.d041bd9c.css.map",
+    "main.c972e7c2.js.map": "/APOD/static/js/main.c972e7c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d041bd9c.css",
+    "static/js/main.c972e7c2.js"
+  ]
+}
