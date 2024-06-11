@@ -16,7 +16,7 @@ class App extends Component {
     fetch(
       `https://api.nasa.gov/planetary/apod?api_key=hnOlXuS4MB2nB1fMnzK5JT2TPgRRa7Ucb0cOMzCC&date=${this.state.searchDate}`
     )
-      .then((resp) => resp.json())
+      .then((res) => res.json())
       .then((data) => {
         this.setState({
           data: data,
@@ -26,12 +26,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log("component did mount");
     this.fetchData();
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log("component did update");
     if (prevState.searchDate !== this.state.searchDate) {
       this.fetchData();
     }

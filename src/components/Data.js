@@ -2,12 +2,25 @@ import React from "react";
 import "./Data.css";
 
 const Data = ({ data }) => {
-  //   console.log(data);
   return (
     <div className="container">
-      <img className="image" src={data.url} alt="today" />
-      <h3>{data.title}</h3>
-      <p className="explanation">{data.explanation}</p>
+      {data.media_type === "video" ? (
+        <div className="video-container">
+          <p>
+            This link will open in youtube. You can still read the information
+            below:
+          </p>
+          <a href={`${data.url}`} target="_blank" without rel="noreferrer">
+            {data.url}
+          </a>
+        </div>
+      ) : (
+        <img className="image" src={data.url} alt="today" />
+      )}
+      <div>
+        <h3>{data.title}</h3>
+        <p className="explanation">{data.explanation}</p>
+      </div>
     </div>
   );
 };

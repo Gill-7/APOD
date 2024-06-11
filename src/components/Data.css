@@ -11,15 +11,49 @@ img {
 }
 
 h3 {
-  margin: 1.2rem 0 0.5rem 0;
+  margin: 1.2rem 0 0.7rem 0;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+  color: rgb(2, 198, 2);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 .explanation {
   font-size: 1.1rem;
   font-weight: 300;
-  line-height: 1.65rem;
+  line-height: 1.55rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: rgb(192, 192, 192);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.video-container {
+  margin: 2rem 0;
+}
+
+.video-container p {
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 580px) {
@@ -28,9 +62,13 @@ h3 {
   }
 
   .explanation {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    marign-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .video-container {
+    margin: 1rem 0;
   }
 }
 
@@ -40,26 +78,26 @@ h3 {
   }
 
   h3 {
-    margin: 0.8rem 0 0.6rem 0;
-    font-size: 1rem;
+    margin: 0.9rem 0 0.6rem 0;
+    font-size: 1.2rem;
   }
 
   .explanation {
     margin-top: 0;
-    font-size: 0.95rem;
-    line-height: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
     margin-bottom: 1rem;
   }
 }
 
 @media only screen and (max-width: 320px) {
   h3 {
-    margin: 0.7rem 0 0.5rem 0;
-    font-size: 0.9rem;
+    margin: 0.8rem 0 0.5rem 0;
+    font-size: 1.1rem;
   }
 
   .explanation {
-    font-size: 0.85rem;
-    line-height: 1.4rem;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
   }
 }
